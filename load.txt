@@ -1,0 +1,82 @@
+import React, { Component } from "react";
+import {StyleSheet, View, Text, TouchableOpacity, TextInput, Alert } from "react-native";
+import MapView from 'react-native-maps';
+
+export default class Agg_info extends Component {
+
+    constructor() {
+        super()
+
+        this.state = {
+            nombreRuta:'',
+            informacionRuta:'',
+
+        }
+    }
+
+    changenombreruta(nombreruta){
+        this.setState({nombreruta})
+    }
+
+    changeInformacionRuta(informacionRuta){
+        this.setState({informacionRuta})
+    }
+    /*
+    buttonPressed() {
+        if(this.state.nombreruta && this.state.informacionRuta){
+           // Alert.alert("holaaa")
+        }
+*/
+    render() {
+        return (
+            <View style={styles.agg_info}>
+                <Text style={styles.header}>Ingrese los datos</Text>
+
+                <TextInput style={styles.textinput} placeholder="Nombre ruta"
+                underlineColorAndroid={'transparent'}/>
+
+                <TextInput style={styles.textinput} placeholder="Informacion de la ruta"
+                underlineColorAndroid={'transparent'}/>
+
+                <TouchableOpacity style={styles.button} onPress={() => this.buttonPressed} >
+                    <Text style={styles.btntext}>Listo</Text>
+                    
+                </TouchableOpacity>
+            </View>
+        )
+    }
+}
+
+const styles = StyleSheet.create({
+    agg_info: {
+        alignSelf: "stretch",
+
+    },
+    header: {
+        fontSize:24,
+        color: '#fff',
+        paddingBottom: 10,
+        marginBottom: 40,
+        borderBottomColor: '#199187',
+        borderBottomWidth: 1
+    },
+    textinput: {
+        alignSelf: 'stretch',
+        height: 40,
+        marginBottom: 30,
+        color: '#fff',
+        borderBottomColor: '#f8f8f8',
+        borderBottomWidth: 1,
+    },
+    button: {
+        alignSelf:"stretch",
+        alignItems:"center",
+        padding:20,
+        backgroundColor: '#59cbbd',
+        marginTop:30
+    },
+    btntext: {
+        color: '#fff',
+        fontWeight: 'bold',
+    }
+});

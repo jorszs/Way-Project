@@ -1,0 +1,21 @@
+==> 2019-10-08 19:39:32 <==
+# cmd: C:\Users\Hernanmauricio\Anaconda3\Scripts\conda-script.py create --name myenv
+# conda version: 4.7.12
+==> 2019-10-08 19:46:37 <==
+# cmd: C:\Users\Hernanmauricio\Anaconda3\Scripts\conda-script.py install -c anaconda django
+# conda version: 4.7.12
++anaconda::ca-certificates-2019.8.28-0
++anaconda::certifi-2019.9.11-py37_0
++anaconda::django-2.2.5-py37_1
++anaconda::openssl-1.1.1-he774522_0
++anaconda::pip-19.2.3-py37_0
++anaconda::python-3.7.4-h5263a28_0
++anaconda::pytz-2019.3-py_0
++anaconda::setuptools-41.4.0-py37_0
++anaconda::sqlite-3.29.0-he774522_0
++anaconda::sqlparse-0.3.0-py_0
++anaconda::vc-14.1-h21ff451_3
++anaconda::vs2015_runtime-15.5.2-3
++anaconda::wheel-0.33.6-py37_0
++anaconda::wincertstore-0.2-py37_0
+# update specs: ['django']
